@@ -11,13 +11,12 @@ import Foundation
 @MainActor
 class MovieListViewModel: ObservableObject {
     // SHAK: Properties
-    var networkCall: NetworkCall = NetworkCall()
     @Published var movies: [MovieViewModel] = []
     
     // SHAK: Functions
     func search(term: String) async {
         do {
-            let searchResult = try await networkCall.fetchMovies(searchTerm: term)
+            let searchResult = try await NetworkCall().fetchMovies(searchTerm: term)
             self.movies = searchResult.map(MovieViewModel.init)
         } catch {
             print(error)
@@ -28,8 +27,8 @@ class MovieListViewModel: ObservableObject {
 struct MovieViewModel {
     // SHAK: Properties
     let movie: Movie
-    var imdbID: String {
-        movie.imdbID
+    var imdbId: String {
+        movie.imdbId
     }
     var title: String {
         movie.title

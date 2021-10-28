@@ -14,7 +14,7 @@ struct MovieSearchListView: View {
     
     var body: some View {
         NavigationView {
-            List(movieListVM.movies, id: \.imdbID) { movie in
+            List(movieListVM.movies, id: \.imdbId) { movie in
                 HStack {
                     AsyncImage(url: movie.poster, content: { image in
                         image.resizable()

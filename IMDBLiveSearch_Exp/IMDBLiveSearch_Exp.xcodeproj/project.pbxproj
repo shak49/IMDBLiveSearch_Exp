@@ -30,7 +30,6 @@
 		6D980FCE272A4DF400ECEDD2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		6D980FD2272A523C00ECEDD2 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		6D980FD4272AE71700ECEDD2 /* MovieSearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchListView.swift; sourceTree = "<group>"; };
-		6D980FD6272AEFEF00ECEDD2 /* IMDBLiveSearch-Exp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IMDBLiveSearch-Exp-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6D980FD7272AF60200ECEDD2 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +47,6 @@
 		6D980FAC272A3E1300ECEDD2 = {
 			isa = PBXGroup;
 			children = (
-				6D980FD6272AEFEF00ECEDD2 /* IMDBLiveSearch-Exp-Info.plist */,
 				6D980FB7272A3E1300ECEDD2 /* IMDBLiveSearch_Exp */,
 				6D980FB6272A3E1300ECEDD2 /* Products */,
 			);
