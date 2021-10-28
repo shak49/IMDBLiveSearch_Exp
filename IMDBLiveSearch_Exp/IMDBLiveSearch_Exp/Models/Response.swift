@@ -8,15 +8,15 @@
 import Foundation
 
 
-struct Response {
-    var movie: [Movie]
+struct Response: Codable {
+    var movies: [Movie]
     
     enum NameKeys: String, CodingKey {
-        case movie = "Search"
+        case movies = "Search"
     }
 }
 
-struct Movie {
+struct Movie: Codable {
     let title: String
     let type: String
     let imdbID: String
