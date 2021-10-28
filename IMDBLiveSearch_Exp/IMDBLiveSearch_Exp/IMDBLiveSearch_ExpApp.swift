@@ -11,7 +11,7 @@ import SwiftUI
 struct IMDBLiveSearch_ExpApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MovieSearchListView()
         }
     }
 }

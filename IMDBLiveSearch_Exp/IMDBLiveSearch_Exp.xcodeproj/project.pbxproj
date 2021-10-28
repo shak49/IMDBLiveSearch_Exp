@@ -62,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				6D980FB8272A3E1300ECEDD2 /* IMDBLiveSearch_ExpApp.swift */,
+				6D980FBA272A3E1300ECEDD2 /* ContentView.swift */,
 				6D980FC6272A3E3500ECEDD2 /* Helper & Extensions */,
 				6D980FC8272A3E5000ECEDD2 /* Models */,
 				6D980FC7272A3E4700ECEDD2 /* Views */,
@@ -91,7 +92,6 @@
 		6D980FC7272A3E4700ECEDD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6D980FBA272A3E1300ECEDD2 /* ContentView.swift */,
 				6D980FD4272AE71700ECEDD2 /* MovieSearchListView.swift */,
 				6D980FD2272A523C00ECEDD2 /* MovieListViewModel.swift */,
 			);

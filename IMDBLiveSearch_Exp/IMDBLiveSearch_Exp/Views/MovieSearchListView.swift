@@ -19,6 +19,9 @@ struct MovieSearchListView: View {
             }
             .listStyle(.plain)
             .searchable(text: $searchTerm)
+            .onChange(of: searchTerm) { value in
+                print(value)
+            }
         }
     }
 }
