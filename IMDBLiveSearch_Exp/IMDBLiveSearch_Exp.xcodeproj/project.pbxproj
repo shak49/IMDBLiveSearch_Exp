@@ -15,6 +15,7 @@
 		6D980FCD272A442500ECEDD2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D980FCC272A442500ECEDD2 /* Response.swift */; };
 		6D980FCF272A4DF400ECEDD2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D980FCE272A4DF400ECEDD2 /* NetworkError.swift */; };
 		6D980FD3272A523C00ECEDD2 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D980FD2272A523C00ECEDD2 /* MovieListViewModel.swift */; };
+		6D980FD5272AE71700ECEDD2 /* MovieSearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D980FD4272AE71700ECEDD2 /* MovieSearchListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		6D980FCC272A442500ECEDD2 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		6D980FCE272A4DF400ECEDD2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		6D980FD2272A523C00ECEDD2 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		6D980FD4272AE71700ECEDD2 /* MovieSearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				6D980FBA272A3E1300ECEDD2 /* ContentView.swift */,
+				6D980FD4272AE71700ECEDD2 /* MovieSearchListView.swift */,
 				6D980FD2272A523C00ECEDD2 /* MovieListViewModel.swift */,
 			);
 			path = Views;
@@ -183,6 +186,7 @@
 			files = (
 				6D980FBB272A3E1300ECEDD2 /* ContentView.swift in Sources */,
 				6D980FCB272A43E900ECEDD2 /* NetworkCall.swift in Sources */,
+				6D980FD5272AE71700ECEDD2 /* MovieSearchListView.swift in Sources */,
 				6D980FCD272A442500ECEDD2 /* Response.swift in Sources */,
 				6D980FB9272A3E1300ECEDD2 /* IMDBLiveSearch_ExpApp.swift in Sources */,
 				6D980FCF272A4DF400ECEDD2 /* NetworkError.swift in Sources */,
