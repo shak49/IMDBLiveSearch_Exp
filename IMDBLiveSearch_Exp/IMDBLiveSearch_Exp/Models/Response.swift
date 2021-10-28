@@ -11,7 +11,7 @@ import Foundation
 struct Response: Codable {
     var movies: [Movie]
     
-    private enum NameKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case movies = "Search"
     }
 }
@@ -21,7 +21,7 @@ struct Movie: Codable {
     let title: String
     let poster: String
     
-    private enum NameKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case imdbId = "imdbID"
         case title = "Title"
         case poster = "Poster"

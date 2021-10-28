@@ -27,10 +27,11 @@ class NetworkCall {
         guard (response as? HTTPURLResponse)?.statusCode == 200 else {
             throw NetworkError.badID
         }
-        let movieResponse = try? JSONDecoder().decode(Response?.self, from: data)
+        let movieResponse = try? JSONDecoder().decode(Response.self, from: data)
+        let movies = movieResponse?.movies
         //print(url)
         print(data)
-        print(movieResponse?.movies ?? [])
-        return movieResponse?.movies ?? []
+        print(movies ?? [])
+        return movies ?? []
     }
 }
