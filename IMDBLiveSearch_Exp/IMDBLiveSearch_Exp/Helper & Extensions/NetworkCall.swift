@@ -15,7 +15,7 @@ class NetworkCall {
         component.scheme = "http"
         component.host = "omdbapi.com"
         component.queryItems = [
-            URLQueryItem(name: "s", value: searchTerm),
+            URLQueryItem(name: "s", value: searchTerm.trimmed()),
             URLQueryItem(name: "apikey", value: "3e07bca7")
         ]
         guard let url = component.url else {

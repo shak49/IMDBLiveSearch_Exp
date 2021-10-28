@@ -15,13 +15,29 @@ struct MovieSearchListView: View {
     var body: some View {
         NavigationView {
             List(movieListVM.movies, id: \.imdbID) { movie in
-                Text(movie.title)
+                HStack {
+                    AsyncImage(url: movie.poster, content: { image in
+                        image.resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(maxWidth: 100)
+                    }, placeholder: {
+                        ProgressView()
+                    })
+                    Text(movie.title)
+                }
             }
             .listStyle(.plain)
             .searchable(text: $searchTerm)
             .onChange(of: searchTerm) { value in
-                print(value)
+                async {
+                    await movieListVM.search(term: value)
+                    if !value.isEmpty && value.count > 3 {
+                    } else {
+                        movieListVM.movies.removeAll()
+                    }
+                }
             }
+            .navigationTitle("Movies")
         }
     }
 }
